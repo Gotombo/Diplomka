@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="580dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@mipmap/back"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@mipmap/ic_launcher_custom_background"
+        android:layout_marginTop="44px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage" />
+    <TextView
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="142dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.06"
+        android:text="@string/custom_caps"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/custom"
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:text="@string/MagazinKepok"
+        android:gravity="center"
+        android:paddingEnd="160dp"
+        android:textSize="18sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Enter"
+        app:cornerRadius="30dp"
+        android:paddingVertical="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter"
+        android:layout_marginHorizontal="120dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+     app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="120dp"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Register"
+        app:cornerRadius="30dp"
+        android:paddingVertical="15dpdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/REg"
+        android:layout_marginHorizontal="120dp"
+       android:backgroundTint="@color/need"
+        android:alpha="0.6"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Enter"
+        tools:layout_editor_absoluteX="84dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

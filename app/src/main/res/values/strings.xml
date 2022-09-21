@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Applicationvg</string>
+    <string name="custom_caps">CUSTOM CAPS</string>
+    <string name="MagazinKepok">Магазин кепок</string>
+    <string name="Enter">Войти</string>
+    <string name="REg">Зарегестрироваться</string>
+</resources>
